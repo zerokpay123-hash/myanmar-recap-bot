@@ -50,7 +50,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         uploaded_file = client.files.upload(file=input_file)
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.8-flash',
             contents=[uploaded_file, "Watch this video and write an engaging TikTok video recap script in natural Myanmar language. Return only the script text."]
         )
         script_text = response.text
