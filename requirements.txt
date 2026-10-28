@@ -1,0 +1,4 @@
+python-telegram-bot
+google-genai
+edge-tts
+yt-dlp
